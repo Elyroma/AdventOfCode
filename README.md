@@ -8,7 +8,7 @@
 ### ❄ Jour 1
 > [Java](https://github.com/Elyroma/AdventOfCode/tree/main/day1)
 
-![Neige](snow.gif)
+<img align="center">![Neige](snow.gif)</img>
 
 ## D'autres solutions magnifiques
 ### 🎄 Antoine
