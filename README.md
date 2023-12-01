@@ -1,7 +1,11 @@
 # ☃ Advent of code 2023 ☃
 
+## <p align="center">2 🌟</p>
+
 ### 📅 Les défis
 > [Advent of code 2023](https://adventofcode.com/2023)
+
+### ❄ Jour 1
 
 ![Neige](snow.gif)
 
