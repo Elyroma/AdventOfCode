@@ -1,4 +1,4 @@
-# ☃ Advent of code 2023 ☃
+# <p align="center">☃ Advent of code 2023 ☃</p>
 
 ## <p align="center">2 🌟</p>
 
@@ -6,6 +6,7 @@
 > [Advent of code 2023](https://adventofcode.com/2023)
 
 ### ❄ Jour 1
+> [Java](https://github.com/Elyroma/AdventOfCode/tree/main/day1)
 
 ![Neige](snow.gif)
 
