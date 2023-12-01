@@ -1,1 +1,1 @@
-# AdventOfCode
+# ☃ AdventOfCode
