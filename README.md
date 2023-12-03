@@ -11,6 +11,9 @@
 ### ❄ Jour 2
 > [Java](https://github.com/Elyroma/AdventOfCode/tree/main/day2)
 
+### ❄ Jour 3
+> [Java](https://github.com/Elyroma/AdventOfCode/tree/main/day3)
+> 
 <p align="center">
     <img src="./snow.gif" alt="snow"/>
 </p>
