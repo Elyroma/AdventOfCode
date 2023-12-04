@@ -18,7 +18,7 @@
 > [Java](https://github.com/Elyroma/AdventOfCode/tree/main/day4)
 
 <p align="center">
-    <img src="./snow.gif" alt="snow"/>
+    <img src="./disneysnow.gif" alt="snow"/>
 </p>
 
 ## D'autres solutions magnifiques
