@@ -11,20 +11,33 @@ public class Main {
     }
 
     public static boolean hasSymbol(int i, int j, int lenght){
+        System.out.println("--------new nb---------");
         if(i - 1 >= 0){
+            System.out.println("----------------i-1-" + (i-1) + "------------");
             for(int k = j-1 < 0 ? 0 : j-1; k < engineSchematic.get(i - 1).size() && k < j + lenght + 1; k++){
-                if(!engineSchematic.get(i-1).get(k).equals(".") && !(j <= k && k < j + lenght)){
-                    return true;
+                System.out.println("-----------------" + k + "------------");
+                System.out.println(engineSchematic.get(i-1).get(k));
+                try{
+                    int value = Integer.parseInt(engineSchematic.get(i-1).get(k));
+                }catch (Exception e){
+                    if (!engineSchematic.get(i-1).get(k).equals(".")) {
+                        return true;
+                    }
                 }
             }
         }
-        //System.out.println("--------nenn---------");
+
         for(int l = i; l <= i+1 && l < engineSchematic.size(); l++) {
+            System.out.println("-----------------" + l + "------" + j+ "------");
             for (int k = j - 1 < 0 ? 0 : j - 1; k < engineSchematic.get(l).size() && k < j + lenght + 1; k++) {
+                System.out.println("-----------------" + k + "------------");
                 System.out.println(engineSchematic.get(l).get(k));
-                System.out.println(!(l == i && j <= k && k < j + lenght) + " " +k +" " + (j + lenght) );
-                if (!engineSchematic.get(l).get(k).equals(".") && !(j <= k && k < j + lenght && l == i)) {
-                    return true;
+                try{
+                    int value = Integer.parseInt(engineSchematic.get(l).get(k));
+                }catch (Exception e){
+                    if (!engineSchematic.get(l).get(k).equals(".")) {
+                        return true;
+                    }
                 }
             }
         }
@@ -39,11 +52,19 @@ public class Main {
                 try{
                     number += Integer.parseInt(engineSchematic.get(i).get(j));
                 } catch (Exception ignored){
+                    System.out.println(number);
+                    System.out.println(i + " " + (j - number.length()));
                     if(!number.equals("") && hasSymbol(i, j - number.length(), number.length())){
                         sum += Integer.parseInt(number);
                     }
                     number = "";
                 }
+
+                if(!number.equals("") && !(j + 1 < engineSchematic.get(i).size()) && hasSymbol(i, j - number.length(), number.length())){
+                    System.out.println(number);
+                    sum += Integer.parseInt(number);
+                }
+                System.out.println(" ===========SOMME============= " + sum);
             }
         }
         return sum;
@@ -66,7 +87,6 @@ public class Main {
                 fileToArray(line);
                 // ajoute la ligne au buffer
                 sb.append(line);
-                sb.append("\n");
                 sb.append("\n");
             }
             fr.close();
