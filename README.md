@@ -1,6 +1,6 @@
 # <p align="center">☃ Advent of code 2023 ☃</p>
 
-## <p align="center">4 🌟</p>
+## <p align="center">6 🌟</p>
 
 ### 📅 Les défis
 > [Advent of code 2023](https://adventofcode.com/2023)
@@ -13,6 +13,9 @@
 
 ### ❄ Jour 3
 > 😔
+
+### ❄ Jour 4
+> [Java](https://github.com/Elyroma/AdventOfCode/tree/main/day4)
 
 <p align="center">
     <img src="./snow.gif" alt="snow"/>
